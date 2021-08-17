@@ -1,9 +1,9 @@
+import openpyxl
 
 def readExcel(filename):
     """функция получает тип ТС и загружает соответствующий файл эксель
     и возвращает список со списком в формате [ТС, описание, нормы ГСМ]"""
 
-    import openpyxl
 
     wb = openpyxl.load_workbook('./baza_norm/' + filename + '.xlsx')
     subs = []
